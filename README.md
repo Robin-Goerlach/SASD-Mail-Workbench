@@ -6,6 +6,14 @@ beginnt mit .NET 8. Die erste grafische Oberfläche folgt in Milestone 0.4.0
 als Windows-Forms-Adapter; Domain, Application und Persistenz bleiben davon
 unabhängig.
 
+## Screenshot / UI-Vorschau
+
+Die folgende Abbildung zeigt eine realistische Konzeptansicht der geplanten **SASD Mail Workbench** mit Kontenübersicht, Nachrichtenliste, Mailvorschau und lokalem Sicherheits- bzw. Analysebereich.
+
+![Screenshot der SASD Mail Workbench](docs/images/sasd-mail-workbench-screenshot.png)
+
+> Hinweis: Der Screenshot zeigt die geplante WinForms-Oberfläche aus einem späteren Meilenstein. Der aktuelle Code-Stand 0.3.1 liefert bewusst noch die technische Grundlage ohne fertige grafische Oberfläche.
+
 ## Aktueller Stand
 
 **Version 0.3.1 – Stabilisierung und Build-Basis**
@@ -96,8 +104,6 @@ tests/
 - [Milestone 0.3.1](docs/milestones/MILESTONE-0.3.1.md)
 - [Architektur](docs/architecture/ARCHITECTURE.md)
 - [Datenintegrität und Recovery](docs/architecture/IMPORT-AND-RECOVERY.md)
-- [Code-Walkthrough 0.3.1](docs/development/CODE-WALKTHROUGH-0.3.1.md)
-- [Build-Hinweis](BUILD-NOTICE.md)
 - [Qualitätsreview](docs/quality/QUALITY-REVIEW-2026-07-12.md)
 - [GitHub-Veröffentlichung](docs/development/GITHUB-PUBLISHING.md)
 
