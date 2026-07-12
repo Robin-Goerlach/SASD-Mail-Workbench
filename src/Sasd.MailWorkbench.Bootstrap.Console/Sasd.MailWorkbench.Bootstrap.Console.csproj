@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sasd.MailWorkbench.Domain\Sasd.MailWorkbench.Domain.csproj" />
+    <ProjectReference Include="..\Sasd.MailWorkbench.Application.Contracts\Sasd.MailWorkbench.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Sasd.MailWorkbench.Application\Sasd.MailWorkbench.Application.csproj" />
+    <ProjectReference Include="..\Sasd.MailWorkbench.Infrastructure\Sasd.MailWorkbench.Infrastructure.csproj" />
+    <ProjectReference Include="..\Sasd.MailWorkbench.Persistence\Sasd.MailWorkbench.Persistence.csproj" />
+  </ItemGroup>
+</Project>

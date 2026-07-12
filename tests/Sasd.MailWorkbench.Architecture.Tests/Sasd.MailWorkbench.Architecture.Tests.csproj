@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="NUnit" />
+    <PackageReference Include="NUnit3TestAdapter">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Sasd.MailWorkbench.Domain\Sasd.MailWorkbench.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Sasd.MailWorkbench.Application.Contracts\Sasd.MailWorkbench.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\src\Sasd.MailWorkbench.Application\Sasd.MailWorkbench.Application.csproj" />
+    <ProjectReference Include="..\..\src\Sasd.MailWorkbench.ExtensionModel\Sasd.MailWorkbench.ExtensionModel.csproj" />
+    <ProjectReference Include="..\..\src\Sasd.MailWorkbench.Infrastructure\Sasd.MailWorkbench.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\Sasd.MailWorkbench.Persistence\Sasd.MailWorkbench.Persistence.csproj" />
+  </ItemGroup>
+</Project>

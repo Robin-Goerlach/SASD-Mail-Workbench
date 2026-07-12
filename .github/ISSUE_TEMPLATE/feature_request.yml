@@ -1,0 +1,21 @@
+name: Funktionsvorschlag
+description: Fachlich begründete Erweiterung vorschlagen
+title: "feat: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Zu lösendes Problem
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Gewünschtes Ergebnis
+    validations:
+      required: true
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: Sicherheits-, Datenschutz- oder Architekturgrenzen

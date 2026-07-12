@@ -1,0 +1,87 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36310.24
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sasd.MailWorkbench.Domain", "src\Sasd.MailWorkbench.Domain\Sasd.MailWorkbench.Domain.csproj", "{00000001-1111-4A11-8B11-000000000001}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sasd.MailWorkbench.Application.Contracts", "src\Sasd.MailWorkbench.Application.Contracts\Sasd.MailWorkbench.Application.Contracts.csproj", "{00000002-1111-4A11-8B11-000000000002}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sasd.MailWorkbench.Application", "src\Sasd.MailWorkbench.Application\Sasd.MailWorkbench.Application.csproj", "{00000003-1111-4A11-8B11-000000000003}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sasd.MailWorkbench.ExtensionModel", "src\Sasd.MailWorkbench.ExtensionModel\Sasd.MailWorkbench.ExtensionModel.csproj", "{00000004-1111-4A11-8B11-000000000004}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sasd.MailWorkbench.Infrastructure", "src\Sasd.MailWorkbench.Infrastructure\Sasd.MailWorkbench.Infrastructure.csproj", "{00000005-1111-4A11-8B11-000000000005}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sasd.MailWorkbench.Persistence", "src\Sasd.MailWorkbench.Persistence\Sasd.MailWorkbench.Persistence.csproj", "{00000006-1111-4A11-8B11-000000000006}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sasd.MailWorkbench.Bootstrap.Console", "src\Sasd.MailWorkbench.Bootstrap.Console\Sasd.MailWorkbench.Bootstrap.Console.csproj", "{00000007-1111-4A11-8B11-000000000007}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sasd.MailWorkbench.Domain.Tests", "tests\Sasd.MailWorkbench.Domain.Tests\Sasd.MailWorkbench.Domain.Tests.csproj", "{00000008-1111-4A11-8B11-000000000008}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sasd.MailWorkbench.Application.Tests", "tests\Sasd.MailWorkbench.Application.Tests\Sasd.MailWorkbench.Application.Tests.csproj", "{00000009-1111-4A11-8B11-000000000009}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sasd.MailWorkbench.Infrastructure.Tests", "tests\Sasd.MailWorkbench.Infrastructure.Tests\Sasd.MailWorkbench.Infrastructure.Tests.csproj", "{0000000A-1111-4A11-8B11-00000000000A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sasd.MailWorkbench.Persistence.Tests", "tests\Sasd.MailWorkbench.Persistence.Tests\Sasd.MailWorkbench.Persistence.Tests.csproj", "{0000000B-1111-4A11-8B11-00000000000B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sasd.MailWorkbench.Architecture.Tests", "tests\Sasd.MailWorkbench.Architecture.Tests\Sasd.MailWorkbench.Architecture.Tests.csproj", "{0000000C-1111-4A11-8B11-00000000000C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00000001-1111-4A11-8B11-000000000001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00000001-1111-4A11-8B11-000000000001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00000001-1111-4A11-8B11-000000000001}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00000001-1111-4A11-8B11-000000000001}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00000002-1111-4A11-8B11-000000000002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00000002-1111-4A11-8B11-000000000002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00000002-1111-4A11-8B11-000000000002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00000002-1111-4A11-8B11-000000000002}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00000003-1111-4A11-8B11-000000000003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00000003-1111-4A11-8B11-000000000003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00000003-1111-4A11-8B11-000000000003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00000003-1111-4A11-8B11-000000000003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00000004-1111-4A11-8B11-000000000004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00000004-1111-4A11-8B11-000000000004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00000004-1111-4A11-8B11-000000000004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00000004-1111-4A11-8B11-000000000004}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00000005-1111-4A11-8B11-000000000005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00000005-1111-4A11-8B11-000000000005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00000005-1111-4A11-8B11-000000000005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00000005-1111-4A11-8B11-000000000005}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00000006-1111-4A11-8B11-000000000006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00000006-1111-4A11-8B11-000000000006}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00000006-1111-4A11-8B11-000000000006}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00000006-1111-4A11-8B11-000000000006}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00000007-1111-4A11-8B11-000000000007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00000007-1111-4A11-8B11-000000000007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00000007-1111-4A11-8B11-000000000007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00000007-1111-4A11-8B11-000000000007}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00000008-1111-4A11-8B11-000000000008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00000008-1111-4A11-8B11-000000000008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00000008-1111-4A11-8B11-000000000008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00000008-1111-4A11-8B11-000000000008}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00000009-1111-4A11-8B11-000000000009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00000009-1111-4A11-8B11-000000000009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00000009-1111-4A11-8B11-000000000009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00000009-1111-4A11-8B11-000000000009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0000000A-1111-4A11-8B11-00000000000A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0000000A-1111-4A11-8B11-00000000000A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0000000A-1111-4A11-8B11-00000000000A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0000000A-1111-4A11-8B11-00000000000A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0000000B-1111-4A11-8B11-00000000000B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0000000B-1111-4A11-8B11-00000000000B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0000000B-1111-4A11-8B11-00000000000B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0000000B-1111-4A11-8B11-00000000000B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0000000C-1111-4A11-8B11-00000000000C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0000000C-1111-4A11-8B11-00000000000C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0000000C-1111-4A11-8B11-00000000000C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0000000C-1111-4A11-8B11-00000000000C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
