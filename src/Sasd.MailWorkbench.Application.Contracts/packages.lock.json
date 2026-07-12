@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dependencies": {
+    "net8.0": {
+      "sasd.mailworkbench.domain": {
+        "type": "Project"
+      }
+    }
+  }
+}
