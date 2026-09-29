@@ -19,6 +19,8 @@ public sealed class LayerDependencyTests
             "Sasd.MailWorkbench.Infrastructure",
             "Sasd.MailWorkbench.Persistence",
             "Microsoft.Data.Sqlite",
+            "MailKit",
+            "MimeKit",
             "System.Windows.Forms"
         ];
         AssertNoReferences(typeof(MessageFingerprint).Assembly, forbidden);
@@ -31,6 +33,8 @@ public sealed class LayerDependencyTests
             "Sasd.MailWorkbench.Infrastructure",
             "Sasd.MailWorkbench.Persistence",
             "Microsoft.Data.Sqlite",
+            "MailKit",
+            "MimeKit",
             "System.Windows.Forms"
         ]);
     }
@@ -43,6 +47,8 @@ public sealed class LayerDependencyTests
             "Sasd.MailWorkbench.Infrastructure",
             "Sasd.MailWorkbench.Persistence",
             "Microsoft.Data.Sqlite",
+            "MailKit",
+            "MimeKit",
             "System.Windows.Forms"
         ]);
     }
