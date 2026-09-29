@@ -153,10 +153,5 @@ public sealed class Sha256MessageFingerprintServiceTests
             base.Dispose(disposing);
         }
 
-        public override async ValueTask DisposeAsync()
-        {
-            await _inner.DisposeAsync().ConfigureAwait(false);
-            GC.SuppressFinalize(this);
-        }
     }
 }
