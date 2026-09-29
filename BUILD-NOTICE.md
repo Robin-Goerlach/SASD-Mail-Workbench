@@ -2,7 +2,10 @@
 
 Der Quellstand wurde statisch auf Projektverweise, XML-Struktur, Pfade und offensichtliche Syntaxprobleme geprüft.
 
-In der Erstellungsumgebung war kein .NET-SDK installiert. Deshalb konnten `dotnet restore`, `dotnet build` und `dotnet test` dort nicht ausgeführt werden.
+Am 23. September 2026 wurden Locked-Restore, Release-Build und alle 21 Tests
+unter Windows mit SDK 8.0.425 erfolgreich ausgeführt. Analyzer-Warnungen sowie
+die unabhängige Clean-Machine-/CI-Prüfung bleiben offen. Prüfbefehle und
+Umgebungsgrenzen stehen in `docs/development/BUILD-VERIFICATION.md`.
 
 Auf einem Windows-Rechner mit Visual Studio 2022 und dem in `global.json` angegebenen .NET-8-SDK bitte ausführen:
 

@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sasd.MailWorkbench.Notification.Domain\Sasd.MailWorkbench.Notification.Domain.csproj" />
+    <ProjectReference Include="..\Sasd.MailWorkbench.Notification.Contracts\Sasd.MailWorkbench.Notification.Contracts.csproj" />
+  </ItemGroup>
+</Project>

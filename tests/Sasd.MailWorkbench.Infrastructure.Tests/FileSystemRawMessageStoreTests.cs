@@ -23,12 +23,12 @@ public sealed class FileSystemRawMessageStoreTests
         await using MemoryStream copy = new();
         await stored.CopyToAsync(copy);
 
-        Assert.Multiple(() =>
+        Assert.Multiple((Action)(() =>
         {
             Assert.That(target, Is.EqualTo("raw-mails/2026/07/message-1.eml"));
             Assert.That(copy.ToArray(), Is.EqualTo(original));
             Assert.That(staged.Fingerprint.LengthInBytes, Is.EqualTo(original.Length));
-        });
+        }));
     }
 
     [Test]
@@ -36,9 +36,9 @@ public sealed class FileSystemRawMessageStoreTests
     {
         using TemporaryWorkspace workspace = new();
         FileSystemRawMessageStore store = new(workspace.Root, new Sha256MessageFingerprintService());
-        Assert.ThrowsAsync<InvalidOperationException>(async () =>
+        Assert.ThrowsAsync<InvalidOperationException>((Func<Task>)(async () =>
         {
             await store.OpenReadAsync("../outside.eml", CancellationToken.None);
-        });
+        }));
     }
 }

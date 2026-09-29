@@ -10,13 +10,13 @@ public sealed class ImportStateRulesTests
     [Test]
     public void CanTransition_AllowsExpectedHappyPath()
     {
-        Assert.Multiple(() =>
+        Assert.Multiple((Action)(() =>
         {
             Assert.That(ImportStateRules.CanTransition(ImportAttemptState.Discovered, ImportAttemptState.Downloading), Is.True);
             Assert.That(ImportStateRules.CanTransition(ImportAttemptState.Downloading, ImportAttemptState.Staged), Is.True);
             Assert.That(ImportStateRules.CanTransition(ImportAttemptState.Staged, ImportAttemptState.Committing), Is.True);
             Assert.That(ImportStateRules.CanTransition(ImportAttemptState.Committing, ImportAttemptState.Completed), Is.True);
-        });
+        }));
     }
 
     [Test]

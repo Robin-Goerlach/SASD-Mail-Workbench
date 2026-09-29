@@ -31,12 +31,12 @@ public sealed class ImportRawMessagesUseCaseTests
             CancellationToken.None);
         var messages = await repository.ListMessagesAsync(CancellationToken.None);
 
-        Assert.Multiple(() =>
+        Assert.Multiple((Action)(() =>
         {
             Assert.That(report.NewlyStored, Is.EqualTo(1));
             Assert.That(report.ExactDuplicates, Is.EqualTo(1));
             Assert.That(messages, Has.Count.EqualTo(1));
-        });
+        }));
     }
 
     [Test]
@@ -55,12 +55,12 @@ public sealed class ImportRawMessagesUseCaseTests
             new ImportRawMessagesRequest("account", ImportMode.Incremental),
             CancellationToken.None);
 
-        Assert.Multiple(() =>
+        Assert.Multiple((Action)(() =>
         {
             Assert.That(first.NewlyStored, Is.EqualTo(1));
             Assert.That(second.NewlyStored, Is.Zero);
             Assert.That(second.SkippedKnownSourceKeys, Is.EqualTo(1));
-        });
+        }));
     }
 
     private static ImportRawMessagesUseCase Build(

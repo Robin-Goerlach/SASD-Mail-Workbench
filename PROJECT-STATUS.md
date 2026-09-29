@@ -2,8 +2,9 @@
 
 **Produkt:** SASD Mail Workbench  
 **Softwareversion:** 0.3.1  
-**Dokumentstand:** 12. Juli 2026  
-**Status:** Repository-Grundlage erstellt; externer Clean-Machine-Build ausstehend
+**Dokumentstand:** 23. September 2026
+
+**Status:** Windows-Release-Build und 21 Tests erfolgreich; externer Clean-Machine-Build ausstehend
 
 ## Erreicht
 
@@ -20,7 +21,7 @@
 
 ## Noch nicht erreicht
 
-- reale Build- und Testbestätigung auf Windows,
+- unabhängige Clean-Machine- und CI-Bestätigung,
 - committed `packages.lock.json` nach dem ersten Restore,
 - POP3, SMTP oder IMAP,
 - WinForms-Oberfläche,
@@ -28,6 +29,7 @@
 
 ## Nächster technischer Schritt
 
-Repository unter Windows mit Visual Studio 2022 und .NET SDK 8.0.422 öffnen,
-`./scripts/verify.ps1` ausführen, auftretende Compiler- oder Paketabweichungen
-korrigieren und anschließend die erzeugten Lockfiles committen.
+Build-Korrekturen und vorhandene Lockfiles prüfen, anschließend Clean-Machine-
+und CI-Verifikation abschließen. Danach folgt die Retrieval Foundation aus
+Milestone 0.4.0. Lokale Prüfbefehle und Grenzen stehen in
+`docs/development/BUILD-VERIFICATION.md`.

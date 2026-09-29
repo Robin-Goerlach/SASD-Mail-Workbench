@@ -34,12 +34,12 @@ public sealed class ImportFailureClassificationTests
             new ImportRawMessagesRequest("account", ImportMode.CompleteVerification),
             CancellationToken.None);
 
-        Assert.Multiple(() =>
+        Assert.Multiple((Action)(() =>
         {
             Assert.That(report.Outcome, Is.EqualTo(ImportRunOutcome.CompletedWithErrors));
             Assert.That(report.Failed, Is.EqualTo(1));
             Assert.That(report.Errors[0].Code, Is.EqualTo("DOWNLOAD_IO_ERROR"));
-        });
+        }));
     }
 
     private sealed class ThrowingRawMessageSource : IRawMessageSource

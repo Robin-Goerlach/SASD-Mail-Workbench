@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="NUnit" />
+    <PackageReference Include="NUnit3TestAdapter" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../../src/Sasd.MailWorkbench.Notification.Domain/Sasd.MailWorkbench.Notification.Domain.csproj" />
+    <ProjectReference Include="../../src/Sasd.MailWorkbench.Notification.Contracts/Sasd.MailWorkbench.Notification.Contracts.csproj" />
+    <ProjectReference Include="../../src/Sasd.MailWorkbench.Notification.Application/Sasd.MailWorkbench.Notification.Application.csproj" />
+  </ItemGroup>
+</Project>

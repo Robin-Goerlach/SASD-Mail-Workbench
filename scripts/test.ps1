@@ -8,8 +8,9 @@ try {
     dotnet test Sasd.MailWorkbench.sln `
         --configuration $Configuration `
         --no-build `
-        --logger "trx;LogFileName=test-results.trx" `
+        --logger trx `
         --results-directory artifacts/test-results
+    if ($LASTEXITCODE -ne 0) { throw "dotnet test failed with exit code $LASTEXITCODE." }
 } finally {
     Pop-Location
 }

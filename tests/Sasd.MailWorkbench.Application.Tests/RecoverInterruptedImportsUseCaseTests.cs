@@ -54,12 +54,12 @@ public sealed class RecoverInterruptedImportsUseCaseTests
         var report = await recovery.ExecuteAsync(CancellationToken.None);
         var messages = await repository.ListMessagesAsync(CancellationToken.None);
 
-        Assert.Multiple(() =>
+        Assert.Multiple((Action)(() =>
         {
             Assert.That(report.Recovered, Is.EqualTo(1));
             Assert.That(messages, Has.Count.EqualTo(1));
             Assert.That(messages[0].RelativePath, Does.StartWith("raw-mails/2026/07/"));
-        });
+        }));
     }
 
     [Test]
@@ -84,11 +84,11 @@ public sealed class RecoverInterruptedImportsUseCaseTests
         var report = await recovery.ExecuteAsync(CancellationToken.None);
         bool stillExists = await store.ExistsAsync(staged.StagingRelativePath, CancellationToken.None);
 
-        Assert.Multiple(() =>
+        Assert.Multiple((Action)(() =>
         {
             Assert.That(report.OrphanStagingFilesDiscarded, Is.EqualTo(1));
             Assert.That(stillExists, Is.False);
-        });
+        }));
     }
 
 }

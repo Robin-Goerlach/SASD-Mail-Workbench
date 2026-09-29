@@ -3,6 +3,7 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
+    <InternalsVisibleTo Include="Sasd.MailWorkbench.Application" />
     <ProjectReference Include="..\Sasd.MailWorkbench.Domain\Sasd.MailWorkbench.Domain.csproj" />
   </ItemGroup>
 </Project>

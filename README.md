@@ -60,7 +60,7 @@ Alternativ:
 ```powershell
 dotnet restore
 dotnet build --configuration Release --no-restore
-dotnet test --configuration Release --no-build --logger "trx;LogFileName=test-results.trx"
+dotnet test --configuration Release --no-build --logger trx
 ```
 
 Beim ersten Restore werden `packages.lock.json`-Dateien erzeugt. Diese sollen
@@ -94,8 +94,8 @@ tests/
 - Rohmails werden nicht als Text normalisiert, bevor ihr kanonischer Hash
   berechnet wird.
 - Das aktuelle Repository ist nicht unter einer Open-Source-Lizenz freigegeben.
-- Der generierte Stand benötigt einen ersten Build auf einem Rechner mit dem
-  angegebenen .NET-SDK; Details stehen in `docs/development/BUILD-VERIFICATION.md`.
+- Der Windows-Release-Build und 21 Tests wurden mit SDK 8.0.425 bestätigt;
+  Details und offene Prüfschritte stehen in `docs/development/BUILD-VERIFICATION.md`.
 
 ## Dokumentation
 

@@ -4,6 +4,13 @@ Alle wesentlichen Änderungen werden in diesem Dokument festgehalten.
 
 ## [Unreleased]
 
+### Fixed
+
+- interne Berichtszähler für die Application-Assembly freigegeben,
+- mehrdeutige NUnit-Delegates für den .NET-8-Build explizit typisiert,
+- Restore-, Build- und Testskripte brechen bei fehlgeschlagenen dotnet-Aufrufen ab,
+- separate TRX-Dateien statt überschriebener Testergebnisse.
+
 ### Added
 
 - vorbereitete GitHub-Repository-Struktur,

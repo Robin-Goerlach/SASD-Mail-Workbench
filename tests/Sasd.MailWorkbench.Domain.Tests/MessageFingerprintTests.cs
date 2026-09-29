@@ -19,6 +19,6 @@ public sealed class MessageFingerprintTests
     [TestCase("GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG")]
     public void Constructor_RejectsInvalidHash(string value)
     {
-        Assert.That(() => new MessageFingerprint(value, 0), Throws.ArgumentException);
+        Assert.Throws<ArgumentException>((Action)(() => { _ = new MessageFingerprint(value, 0); }));
     }
 }

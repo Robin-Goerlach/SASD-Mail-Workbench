@@ -29,12 +29,12 @@ public sealed class SqliteMessageImportRepositoryTests
         var result = await repository.CompleteNewMessageAsync(attempt, message, observation, CancellationToken.None);
         var loaded = await repository.FindBySourceKeyAsync("account-1", "uid-1", CancellationToken.None);
 
-        Assert.Multiple(() =>
+        Assert.Multiple((Action)(() =>
         {
             Assert.That(result.CandidateWasCreated, Is.True);
             Assert.That(loaded, Is.Not.Null);
             Assert.That(loaded!.RelativePath, Is.EqualTo("raw-mails/2026/07/message-1.eml"));
-        });
+        }));
     }
 
     [Test]
@@ -56,11 +56,11 @@ public sealed class SqliteMessageImportRepositoryTests
         StoredRawMessage second = new("message-b", "account", fingerprint, "raw-mails/b.eml", now);
         var result = await repository.CompleteNewMessageAsync(secondAttempt, second, new SourceObservation("account", "source-b", second.Id, now, now), CancellationToken.None);
 
-        Assert.Multiple(() =>
+        Assert.Multiple((Action)(() =>
         {
             Assert.That(result.CandidateWasCreated, Is.False);
             Assert.That(result.CanonicalMessage.Id, Is.EqualTo("message-a"));
-        });
+        }));
     }
 
     private static ImportAttempt CreateAttempt(

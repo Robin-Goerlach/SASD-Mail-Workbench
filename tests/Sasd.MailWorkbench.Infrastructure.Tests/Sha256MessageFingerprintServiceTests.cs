@@ -19,12 +19,12 @@ public sealed class Sha256MessageFingerprintServiceTests
         var firstFingerprint = await service.ComputeAsync(first, CancellationToken.None);
         var secondFingerprint = await service.ComputeAsync(second, CancellationToken.None);
 
-        Assert.Multiple(() =>
+        Assert.Multiple((Action)(() =>
         {
             Assert.That(firstFingerprint.Sha256, Is.Not.EqualTo(secondFingerprint.Sha256));
             Assert.That(firstFingerprint.LengthInBytes, Is.EqualTo(crlf.Length));
             Assert.That(secondFingerprint.LengthInBytes, Is.EqualTo(lf.Length));
-        });
+        }));
     }
 
     [Test]
@@ -37,10 +37,10 @@ public sealed class Sha256MessageFingerprintServiceTests
 
         var fingerprint = await service.CopyAndComputeAsync(source, destination, CancellationToken.None);
 
-        Assert.Multiple(() =>
+        Assert.Multiple((Action)(() =>
         {
             Assert.That(destination.ToArray(), Is.EqualTo(bytes));
             Assert.That(fingerprint.LengthInBytes, Is.EqualTo(bytes.Length));
-        });
+        }));
     }
 }

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <IsPackable>false</IsPackable>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../Sasd.MailWorkbench.Notification.Domain/Sasd.MailWorkbench.Notification.Domain.csproj" />
+    <ProjectReference Include="../Sasd.MailWorkbench.Notification.Contracts/Sasd.MailWorkbench.Notification.Contracts.csproj" />
+    <ProjectReference Include="../Sasd.MailWorkbench.Notification.Application/Sasd.MailWorkbench.Notification.Application.csproj" />
+    <ProjectReference Include="../Sasd.MailWorkbench.Notification.Infrastructure/Sasd.MailWorkbench.Notification.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

@@ -9,6 +9,7 @@ try {
     } else {
         dotnet restore Sasd.MailWorkbench.sln --use-lock-file
     }
+    if ($LASTEXITCODE -ne 0) { throw "dotnet restore failed with exit code $LASTEXITCODE." }
 } finally {
     Pop-Location
 }
