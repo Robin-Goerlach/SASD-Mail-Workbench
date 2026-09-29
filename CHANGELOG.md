@@ -9,7 +9,13 @@ Alle wesentlichen Änderungen werden in diesem Dokument festgehalten.
 - interne Berichtszähler für die Application-Assembly freigegeben,
 - mehrdeutige NUnit-Delegates für den .NET-8-Build explizit typisiert,
 - Restore-, Build- und Testskripte brechen bei fehlgeschlagenen dotnet-Aufrufen ab,
-- separate TRX-Dateien statt überschriebener Testergebnisse.
+- separate TRX-Dateien statt überschriebener Testergebnisse,
+- Repository-Metadaten und Build-Dokumentation an den verifizierten GitHub-Stand angepasst.
+
+### Changed
+
+- CI verwendet bei committed Lockfiles den gesperrten NuGet-Restoremodus.
+- Milestone 0.3.1 ist nach erfolgreicher Windows-/Ubuntu-CI als technisch abgeschlossen dokumentiert.
 
 ### Added
 
