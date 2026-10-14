@@ -27,9 +27,9 @@ jobs:
         with:
           global-json-file: global.json
 
-      - name: Restore
+      - name: Restore locked dependencies
         shell: pwsh
-        run: ./scripts/restore.ps1
+        run: ./scripts/restore.ps1 -LockedMode
 
       - name: Build
         shell: pwsh

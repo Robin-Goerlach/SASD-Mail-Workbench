@@ -16,6 +16,6 @@
     <Company>SASD GmbH</Company>
     <Product>SASD Mail Workbench</Product>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/SASD-Sysadmin/sasd-mail-workbench</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Robin-Goerlach/SASD-Mail-Workbench</RepositoryUrl>
   </PropertyGroup>
 </Project>

@@ -1,22 +1,35 @@
 # Build-Hinweis
 
-Der Quellstand wurde statisch auf Projektverweise, XML-Struktur, Pfade und offensichtliche Syntaxprobleme geprüft.
+Der aktuelle Hauptstand wurde statisch und durch automatisierte Builds geprüft.
 
 Am 23. September 2026 wurden Locked-Restore, Release-Build und alle 21 Tests
-unter Windows mit SDK 8.0.425 erfolgreich ausgeführt. Analyzer-Warnungen sowie
-die unabhängige Clean-Machine-/CI-Prüfung bleiben offen. Prüfbefehle und
-Umgebungsgrenzen stehen in `docs/development/BUILD-VERIFICATION.md`.
+unter Windows mit SDK 8.0.425 erfolgreich ausgeführt.
 
-Auf einem Windows-Rechner mit Visual Studio 2022 und dem in `global.json` angegebenen .NET-8-SDK bitte ausführen:
+Am 29. September 2026 wurde zusätzlich GitHub Actions für Commit
+`7109775960ca1770602c2746f0bc2432c47fc635` erfolgreich auf
+`windows-latest` und `ubuntu-latest` ausgeführt. Beide Jobs haben Restore,
+Release-Build und alle fünf Testprojekte erfolgreich abgeschlossen. Insgesamt
+bestanden 21 Tests; es gab 0 Fehler und 0 übersprungene Tests.
+
+Die NuGet-Lockdateien sind für alle Projekte der Hauptsolution committed.
+CI verwendet deshalb künftig den gesperrten Restoremodus und schlägt fehl,
+wenn Projektdateien, zentrale Paketversionen und Lockfiles nicht
+übereinstimmen.
+
+Der Build enthält weiterhin Analyzer-Warnungen. Diese sind als technische
+Schulden dokumentiert und werden nicht durch globale Warnungsunterdrückung
+verdeckt. Details stehen in `docs/development/BUILD-VERIFICATION.md`.
+
+Lokale Verifikation:
 
 ```powershell
-./scripts/verify.ps1
+./scripts/verify.ps1 -LockedMode
 ```
 
-Beim ersten Restore werden die NuGet-Lockdateien erzeugt. Danach:
+Falls lokale PowerShell-Ausführungsrichtlinien die Skripte blockieren:
 
 ```powershell
-git add "**/packages.lock.json"
-git commit -m "build: lock restored NuGet dependency graph"
-./scripts/verify.ps1 -LockedMode
+dotnet restore Sasd.MailWorkbench.sln --locked-mode
+dotnet build Sasd.MailWorkbench.sln --configuration Release --no-restore
+dotnet test Sasd.MailWorkbench.sln --configuration Release --no-build --logger trx --results-directory artifacts/test-results
 ```
