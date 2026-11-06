@@ -39,3 +39,8 @@
 
 Nutzbare Mailoberfläche, Suche, Regeln, Datensätze, Exporte, Backup/Restore,
 Härtung, Abnahmeszenarien und Produktfreigabe.
+
+**Verbindlich bis 1.0.0:** Schnellfilterzeile in der Nachrichtenübersicht
+(Spaltenfilter mit UND-Verknüpfung, Datum/Text, unabhängige Sortierung,
+Zurücksetzen, Ergebniszähler; zunächst aktueller Ordner).
+Siehe [Spezifikation](docs/features/MESSAGE-LIST-QUICK-FILTERS.md).
