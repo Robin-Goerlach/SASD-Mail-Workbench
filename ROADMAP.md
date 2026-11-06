@@ -49,5 +49,7 @@ Siehe [Spezifikation](docs/features/MESSAGE-LIST-QUICK-FILTERS.md).
 
 - **Mail-zentrierter Kalender / Wiedervorlage:** Termine, Fristen, Wiedervorlagen und Follow-ups aus dem Mail-Workflow heraus; gemeinsame Reminder-/Notification-Infrastruktur und klare Zuständigkeitsgrenze zu SASD PIMS. Kein vollständiger Outlook-/Thunderbird-Nachbau als Selbstzweck.
   Siehe [Konzept](docs/features/MAIL-CALENDAR-INTEGRATION.md).
+- **Message Pattern & Burst Detection:** Identische oder stark ähnliche Nachrichten in zeitlichen Häufungen erkennen und als neutralen Gruppenbefund bereitstellen. Die Mustererkennung ist bewusst von exakter Deduplizierung und von der eigentlichen Spam-/Security-Entscheidung getrennt; Watcher, Todo und Notifications sollen denselben Befund nutzen können. Keine automatische Löschung allein aufgrund von Häufigkeit oder Ähnlichkeit.
+  Siehe [Konzept](docs/features/MESSAGE-PATTERN-BURST-DETECTION.md).
 
-Dieser Abschnitt ist **nicht Bestandteil der verbindlichen V1-Abnahme**. Eine Aufnahme in einen konkreten Meilenstein erfolgt erst nach Festlegung von Domainmodell, PIMS-/Workbench-Grenze und erster Implementierungs-Slice.
+Dieser Abschnitt ist **nicht Bestandteil der verbindlichen V1-Abnahme**. Eine Aufnahme in einen konkreten Meilenstein erfolgt erst nach Festlegung von Domainmodell, PIMS-/Workbench-Grenze beziehungsweise dem jeweils erforderlichen minimalen Architekturmodell und einer ersten Implementierungs-Slice.
