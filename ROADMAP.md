@@ -44,3 +44,10 @@ Härtung, Abnahmeszenarien und Produktfreigabe.
 (Spaltenfilter mit UND-Verknüpfung, Datum/Text, unabhängige Sortierung,
 Zurücksetzen, Ergebniszähler; zunächst aktueller Ordner).
 Siehe [Spezifikation](docs/features/MESSAGE-LIST-QUICK-FILTERS.md).
+
+## Konzeptkandidaten – Scope noch offen
+
+- **Mail-zentrierter Kalender / Wiedervorlage:** Termine, Fristen, Wiedervorlagen und Follow-ups aus dem Mail-Workflow heraus; gemeinsame Reminder-/Notification-Infrastruktur und klare Zuständigkeitsgrenze zu SASD PIMS. Kein vollständiger Outlook-/Thunderbird-Nachbau als Selbstzweck.
+  Siehe [Konzept](docs/features/MAIL-CALENDAR-INTEGRATION.md).
+
+Dieser Abschnitt ist **nicht Bestandteil der verbindlichen V1-Abnahme**. Eine Aufnahme in einen konkreten Meilenstein erfolgt erst nach Festlegung von Domainmodell, PIMS-/Workbench-Grenze und erster Implementierungs-Slice.
