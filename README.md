@@ -104,6 +104,7 @@ tests/
 - [Milestone 0.3.1](docs/milestones/MILESTONE-0.3.1.md)
 - [Architektur](docs/architecture/ARCHITECTURE.md)
 - [Datenintegrität und Recovery](docs/architecture/IMPORT-AND-RECOVERY.md)
+- [Geplantes IMAP-Backup, Archivierung, Serverbereinigung und Restore](docs/architecture/IMAP-BACKUP-ARCHIVE-RESTORE.md)
 - [Qualitätsreview](docs/quality/QUALITY-REVIEW-2026-07-12.md)
 - [GitHub-Veröffentlichung](docs/development/GITHUB-PUBLISHING.md)
 
